@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+}
+
+
+body {
+  margin: 90px 0 0px 0px;
+}
+
+.container {
+  width: 646px;
+  margin: 75px auto;
+  padding: 0px 153px;
+  user-select: none;
+}
+
+.box {
+  border-radius: 3.615px;
+  border: 1px solid #C8C8C8;
+  cursor: pointer;
+  transition: all .5s ease;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+
+.card-heading-wrapper .card-heading {
+  font-size: 18px;
+  line-height: 18px;
+  color: #007F61;
+  position: relative;
+  text-align: center;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.card-heading-wrapper .card-heading::after {
+  content: "";
+  display: block;
+  width: 94px;
+  height: 1px;
+  background: #C8C8C8;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.card-heading-wrapper .card-heading::before {
+  content: "";
+  display: block;
+  width: 94px;
+  height: 1px;
+  background: #C8C8C8;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.radio-card-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.actual-price {
+  position: absolute;
+  right: 115px;
+  bottom: 1px;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: line-through;
+  color: #b1aeae;
+}
+
+.radio-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.radio-select-btn {
+  width: 14.461px;
+  height: 14.461px;
+  border-radius: 50%;
+  border: 1px solid #DADADA;
+  position: relative;
+}
+
+.pair-selection-wrapper {
+  margin-left: 20px;
+}
+
+.radio-select-btn div {
+  width: 9.04px;
+  height: 9.04px;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.radio-div-1 {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 14.461px;
+  font-weight: 400;
+  line-height: 14.461px;
+  margin-bottom: 5px;
+}
+
+.radio-div-2,
+.radio-div-2.discount {
+  color: #000;
+  font-family: sans-serif;
+  font-size: 14.461px;
+  font-weight: 600;
+  line-height: 14.461px;
+}
+
+
+.most-popular-tag {
+  color: #007F61;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 12.65px;
+  line-height: 15.31px;
+  font-weight: 600;
+
+}
+
+
+.size-container {
+  display: flex;
+  justify-content: start;
+  margin-left: 42px;
+  margin-top: 14px;
+}
+
+.size-content,
+.color-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-content h2,
+.color-content h2 {
+  margin: 6px 0px;
+  font-size: 9.942px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  font-family: sans-serif;
+}
+
+.color-content {
+  margin-left: 10px;
+}
+
+.size-select-one,
+.size-select-two,
+.size-select-three {
+  position: relative;
+}
+
+.size-select-two,
+.color-select-two,
+.size-select-three,
+.color-select-three {
+  margin-top: 10px;
+}
+
+.num {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+select {
+  width: 66px;
+  height: 25px;
+  padding: 3px;
+  border: 0.904px solid #D9D9D9;
+  border-radius: 1.808px;
+  font-size: 10.85px;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  line-height: 13.3px;
+  appearance: none;
+  background-image: url(./assests/arrow-icon.svg);
+  background-size: 10px 15px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) center;
+}
+
+.size-color-boxes-container {
+  display: none;
+}
+
+.cross-text {
+  color: #9F9F9F;
+  font-size: 13px;
+  align-self: end;
+  position: relative;
+  left: 24px;
+  display: none;
+}
+
+.cross-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 41%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  height: 0.5px;
+  background-color: #9F9F9F;
+}
+
+.shiping-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 0px;
+}
+
+.shipping-content {
+  font-family: sans-serif;
+  font-size: 14.461px;
+  font-weight: 500;
+  line-height: 14.461px;
+  color: #007F61;
+}
+
+.add-cart-btn {
+  border-radius: 4px 4px 4px 0px;
+  background: #007F61;
+  text-align: center;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.total {
+  font-size: 14.461px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.total-amount {
+  font-size: 14.461px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+.add-cart-btn span {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.owner {
+  padding: 10px 0px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: normal;
+  color: #000;
+}
+
+/* ------------------ Dynamik Styles ----------------------- */
+.active-box-style {
+  display: block;
+  border: 1px solid #007F61;
+  background: #F4FBF9;
+}
+
+.active-bg {
+  background: #007F61;
+}
+
+.active-outline {
+  border: 1px solid #007F61;
+}
